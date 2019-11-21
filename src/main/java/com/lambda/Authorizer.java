@@ -7,7 +7,7 @@ import com.amazonaws.services.cognitoidp.model.GetUserResult;
 
 public class Authorizer {
 
-    public Boolean verify(String token){
+    public static Boolean verify(String token){
 
         AWSCognitoIdentityProvider cognitoClient = AWSCognitoIdentityProviderClientBuilder.defaultClient();
 

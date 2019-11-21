@@ -1,5 +1,10 @@
 package com.lambda;
 
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBDocument;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBIgnore;
+
+@DynamoDBDocument
 public class User {
 
     private String userName;
@@ -16,7 +21,7 @@ public class User {
     public User(String userToken) {
         this.userToken = userToken;
     }
-
+    @DynamoDBIgnore
     public String getUserName() {
         return userName;
     }
@@ -25,6 +30,7 @@ public class User {
         this.userName = userName;
     }
 
+    @DynamoDBIgnore
     public String getUserToken() {
         return userToken;
     }
