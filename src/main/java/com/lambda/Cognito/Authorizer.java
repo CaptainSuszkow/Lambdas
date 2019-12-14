@@ -1,11 +1,25 @@
-package com.lambda;
+package com.lambda.Cognito;
 
 import com.amazonaws.services.cognitoidp.AWSCognitoIdentityProvider;
 import com.amazonaws.services.cognitoidp.AWSCognitoIdentityProviderClientBuilder;
 import com.amazonaws.services.cognitoidp.model.GetUserRequest;
 import com.amazonaws.services.cognitoidp.model.GetUserResult;
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.JWTVerifier;
+import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.interfaces.DecodedJWT;
+
 
 public class Authorizer {
+
+    public static Object autenticate(String token) {
+        Algorithm algorithm = Algorithm.RSA256(new CognitoRSAKeyProvider());
+        JWTVerifier verifier = JWT.require(algorithm)
+                .withIssuer("https://cognito-idp.us-east-1.amazonaws.com/us-east-1_rHL3nVPk0")
+                .build();
+        DecodedJWT jwt = verifier.verify(token);
+        return jwt;
+    }
 
     public static Boolean verify(String token){
 

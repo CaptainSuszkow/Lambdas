@@ -1,4 +1,4 @@
-package com.lambda;
+package com.lambda.Model;
 
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
@@ -98,11 +98,11 @@ public class Question {
 
 
     @DynamoDBAttribute(attributeName = "isOpen")
-    public Boolean getOpen() {
+    public Boolean getisOpen() {
         return isOpen;
     }
 
-    public void setOpen(Boolean open) {
+    public void setisOpen(Boolean open) {
         isOpen = open;
     }
 
