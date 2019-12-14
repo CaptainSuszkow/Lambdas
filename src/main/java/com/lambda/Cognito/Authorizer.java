@@ -12,7 +12,7 @@ import com.auth0.jwt.interfaces.DecodedJWT;
 
 public class Authorizer {
 
-    public static Object autenticate(String token) {
+    public static Object authenticate(String token) {
         Algorithm algorithm = Algorithm.RSA256(new CognitoRSAKeyProvider());
         JWTVerifier verifier = JWT.require(algorithm)
                 .withIssuer("https://cognito-idp.us-east-1.amazonaws.com/us-east-1_rHL3nVPk0")

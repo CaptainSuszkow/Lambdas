@@ -13,7 +13,7 @@ public class Post {
     public static Object handleRequest(Test request, Context context) {
 
         try {
-            Authorizer.autenticate(request.getUser().getUserToken());
+            Authorizer.authenticate(request.getUser().getUserToken());
         }
         catch(Exception ex){
             return Response.Status.UNAUTHORIZED;
