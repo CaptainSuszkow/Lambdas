@@ -13,27 +13,27 @@ public class Question {
     private String answerD;
     private String correct;
     private String id;
-    private Boolean isOpen;
+    private Integer questionType;
     private String questionContent;
     private String questionAnswer;
 
     public Question() {
     }
 
-    public Question(String answerA, String answerB, String answerC, String answerD, String correct, String id, Boolean isOpen, String questionContent) {
+    public Question(String answerA, String answerB, String answerC, String answerD, String correct, String id, Integer questionType, String questionContent) {
         this.answerA = answerA;
         this.answerB = answerB;
         this.answerC = answerC;
         this.answerD = answerD;
         this.correct = correct;
         this.id = id;
-        this.isOpen = isOpen;
+        this.questionType = questionType;
         this.questionContent = questionContent;
     }
 
-    public Question(String id, Boolean isOpen, String questionContent, String questionAnswer) {
+    public Question(String id, Integer questionType, String questionContent, String questionAnswer) {
         this.id = id;
-        this.isOpen = isOpen;
+        this.questionType = questionType;
         this.questionContent = questionContent;
         this.questionAnswer = questionAnswer;
     }
@@ -97,13 +97,13 @@ public class Question {
     }
 
 
-    @DynamoDBAttribute(attributeName = "isOpen")
-    public Boolean getOpen() {
-        return isOpen;
+    @DynamoDBAttribute(attributeName = "questionType")
+    public Integer getQuestionType() {
+        return questionType;
     }
 
-    public void setOpen(Boolean open) {
-        isOpen = open;
+    public void setQuestionType(Integer type) {
+        questionType = type;
     }
 
     @DynamoDBAttribute(attributeName = "questionAnswer")
