@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a94f363-4558-4ed3-8482-001ab45e5f28" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
+    <list default="true" id="7a94f363-4558-4ed3-8482-001ab45e5f28" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Delete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Get.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Get.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/GetList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/GetList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lambda/Cognito/Authorizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lambda/Cognito/Authorizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lambda/Model/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lambda/Model/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lambda/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lambda/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lambda/APImethods/Delete.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lambda/APImethods/Delete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lambda/APImethods/Get.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lambda/APImethods/Get.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lambda/APImethods/GetList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lambda/APImethods/GetList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lambda/APImethods/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lambda/APImethods/Post.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lambda/Cognito/Authorizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lambda/Cognito/Authorizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lambda/Cognito/CognitoRSAKeyProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lambda/Cognito/CognitoRSAKeyProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lambda/Model/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lambda/Model/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lambda/Model/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lambda/Model/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lambda/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lambda/Model/User.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,118 +43,6 @@
     <expand />
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/Model/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/Model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Delete.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/Cognito/Authorizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/Cognito/CognitoRSAKeyProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Get.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="59" lean-forward="true" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Post.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/APImethods/GetList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/Model/Question.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -145,7 +52,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find> </find>
+      <find></find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -154,137 +61,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/lambdaClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/PersonResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/AwsCredentials.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/lambdaClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/TestRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/AuthenticateUserResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/Post.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/Get.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/Question.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/testAutenticate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/PersonRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/Request.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/Model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/CognitoRSAKeyProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/Authorizer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Post.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Delete.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Get.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/GetList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/testPots.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/Cognito/CognitoRSAKeyProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lambda/Cognito/Authorizer.java" />
-      </list>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="lambda-java-example" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="lambda-java-example" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="lambda-java-example" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1078" />
     <option name="width" value="849" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="testLambda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testLambda" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testLambda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testLambda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testLambda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testLambda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testLambda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testLambda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testLambda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testLambda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lambda" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testLambda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testLambda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lambda" type="462c0819:PsiDirectoryNode" />
-              <item name="APImethods" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testLambda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testLambda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lambda" type="462c0819:PsiDirectoryNode" />
-              <item name="Cognito" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testLambda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testLambda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lambda" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -383,245 +165,9 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17270789" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="aws.explorer" order="2" side_tool="true" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33118972" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3290461" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5021322" side_tool="true" weight="0.3290461" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4978678" weight="0.3290461" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Codota" order="3" weight="0.32995737" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.15778251" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" weight="0.32953104" />
-    </layout>
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="740" column="6" selection-start-line="740" selection-start-column="6" selection-end-line="740" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lambdajavaexample.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/AuthenticateUserResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/AwsCredentials.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/lambdaClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/PersonRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/PersonResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#111#112#0" expanded="true" />
-            <element signature="e#141#142#0" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/Cognito/CognitoRSAKeyProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/Cognito/Authorizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/testPots.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/testAutenticate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Get.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="59" lean-forward="true" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/Model/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/Model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/Model/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/Cognito/CognitoRSAKeyProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Delete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/APImethods/GetList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lambda/Cognito/Authorizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>

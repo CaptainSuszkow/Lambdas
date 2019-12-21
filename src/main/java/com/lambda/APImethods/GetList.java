@@ -11,6 +11,9 @@ import com.lambda.Model.Test;
 import javax.ws.rs.core.Response;
 
 public class GetList {
+    private static AmazonDynamoDB client = AmazonDynamoDBAsyncClientBuilder.defaultClient();
+    private static DynamoDBMapper mapper = new DynamoDBMapper(client);
+
     public static Object handleRequest(Test request, Context context) {
 
         try {
@@ -20,8 +23,7 @@ public class GetList {
             return Response.Status.UNAUTHORIZED;
         }
 
-        AmazonDynamoDB client = AmazonDynamoDBAsyncClientBuilder.defaultClient();
-        DynamoDBMapper mapper = new DynamoDBMapper(client);
+
         return mapper.scan(Test.class, new DynamoDBScanExpression());
     }
 

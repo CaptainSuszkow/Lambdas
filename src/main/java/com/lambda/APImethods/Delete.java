@@ -10,6 +10,10 @@ import com.lambda.Model.Test;
 import javax.ws.rs.core.Response;
 
 public class Delete {
+
+    private static AmazonDynamoDB client = AmazonDynamoDBAsyncClientBuilder.defaultClient();
+    private static DynamoDBMapper mapper = new DynamoDBMapper(client);
+
     public static Object handleRequest(Test request, Context context) {
 
         try {
@@ -20,10 +24,8 @@ public class Delete {
         }
 
         if (Authorizer.verify(request.getUser().getUserToken())) {
-            AmazonDynamoDB client = AmazonDynamoDBAsyncClientBuilder.defaultClient();
-            DynamoDBMapper mapper = new DynamoDBMapper(client);
             mapper.delete(request);
-            return true;
+            return Response.Status.ACCEPTED;
         } else
             return Response.Status.UNAUTHORIZED;
     }

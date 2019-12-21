@@ -10,6 +10,10 @@ import com.lambda.Model.Test;
 import javax.ws.rs.core.Response;
 
 public class Post {
+
+    private static AmazonDynamoDB client = AmazonDynamoDBAsyncClientBuilder.defaultClient();
+    private static DynamoDBMapper mapper = new DynamoDBMapper(client);
+
     public static Object handleRequest(Test request, Context context) {
 
         try {
@@ -20,10 +24,9 @@ public class Post {
         }
 
         if(Authorizer.verify(request.getUser().getUserToken())) {
-            AmazonDynamoDB client = AmazonDynamoDBAsyncClientBuilder.defaultClient();
-            DynamoDBMapper mapper = new DynamoDBMapper(client);
+            request.getUser().setUserName(Authorizer.getUserName(request.getUser().getUserToken()));
             mapper.save(request);
-            return true;
+            return Response.Status.CREATED;
         }
         else
             return Response.Status.UNAUTHORIZED;

@@ -29,8 +29,7 @@ public class Test {
     public List<Question> getQuestions() {
         return questions;
     }
-
-    @DynamoDBIgnore
+    
     public User getUser() {
         return user;
     }
