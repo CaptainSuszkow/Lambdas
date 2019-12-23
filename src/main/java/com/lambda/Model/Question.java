@@ -13,27 +13,39 @@ public class Question {
     private String answerD;
     private String correct;
     private String id;
-    private Integer questionType;
     private String questionContent;
     private String questionAnswer;
+    private boolean isOpen;
+    private boolean isClosed;
+    private boolean isNumerical;
 
     public Question() {
     }
 
-    public Question(String answerA, String answerB, String answerC, String answerD, String correct, String id, Integer questionType, String questionContent) {
+    public Question(String answerA, String answerB, String answerC,
+                    String answerD, String correct, String id,
+                    boolean isClosed, boolean isNumerical, boolean isOpen,
+                    String questionContent) {
+
         this.answerA = answerA;
         this.answerB = answerB;
         this.answerC = answerC;
         this.answerD = answerD;
         this.correct = correct;
         this.id = id;
-        this.questionType = questionType;
+        this.isClosed = isClosed;
+        this.isNumerical = isNumerical;
+        this.isOpen = isOpen;
         this.questionContent = questionContent;
     }
 
-    public Question(String id, Integer questionType, String questionContent, String questionAnswer) {
+    public Question(String id, boolean isClosed, boolean isNumerical,
+                    boolean isOpen , String questionContent, String questionAnswer) {
+
         this.id = id;
-        this.questionType = questionType;
+        this.isClosed = isClosed;
+        this.isNumerical = isNumerical;
+        this.isOpen = isOpen;
         this.questionContent = questionContent;
         this.questionAnswer = questionAnswer;
     }
@@ -96,14 +108,31 @@ public class Question {
         this.id = id;
     }
 
-
-    @DynamoDBAttribute(attributeName = "questionType")
-    public Integer getQuestionType() {
-        return questionType;
+    @DynamoDBAttribute(attributeName = "isOpen")
+    public boolean getisOpen() {
+        return isOpen;
     }
 
-    public void setQuestionType(Integer type) {
-        questionType = type;
+    public void setisOpen(boolean open) {
+        isOpen = open;
+    }
+
+    @DynamoDBAttribute(attributeName = "isClosed")
+    public boolean getisClosed() {
+        return isClosed;
+    }
+
+    public void setisClosed(boolean closed) {
+        isClosed = closed;
+    }
+
+    @DynamoDBAttribute(attributeName = "isNumerical")
+    public boolean getisNumerical() {
+        return isNumerical;
+    }
+
+    public void setisNumerical(boolean numerical) {
+        isNumerical = numerical;
     }
 
     @DynamoDBAttribute(attributeName = "questionAnswer")

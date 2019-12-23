@@ -32,6 +32,6 @@ public class Authorizer {
 
     public static String getUserName(String token){
         DecodedJWT decodedJWT = JWT.decode(token);
-        return decodedJWT.getClaim("username").asString();
+        return decodedJWT.getClaim("cognito:username").asString();
     }
 }

@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a94f363-4558-4ed3-8482-001ab45e5f28" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Delete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Get.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Get.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/GetList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/GetList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lambda/APImethods/Post.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lambda/Cognito/Authorizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lambda/Cognito/Authorizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lambda/Model/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lambda/Model/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lambda/Model/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lambda/Model/Question.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lambda/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lambda/Model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lambda/APImethods/Delete.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lambda/APImethods/Delete.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lambda/APImethods/Get.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lambda/APImethods/Get.class" afterDir="false" />
@@ -60,11 +53,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1078" />
-    <option name="width" value="849" />
-    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -151,6 +139,14 @@
       <workItem from="1574692991597" duration="782000" />
       <workItem from="1576330393387" duration="8186000" />
     </task>
+    <task id="LOCAL-00001" summary="Added userName generated from token">
+      <created>1576951954846</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576951954846</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -164,6 +160,21 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added userName generated from token" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added userName generated from token" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

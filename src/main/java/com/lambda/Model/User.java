@@ -7,10 +7,8 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBIgnore;
 @DynamoDBDocument
 public class User {
 
-    @DynamoDBAttribute(attributeName = "UserName")
-    private String userName;
 
-    @DynamoDBIgnore
+    private String userName;
     private String userToken;
 
     public User(String userName, String userToken) {
@@ -25,6 +23,7 @@ public class User {
         this.userToken = userToken;
     }
 
+    @DynamoDBAttribute(attributeName = "userName")
     public String getUserName() {
         return userName;
     }
