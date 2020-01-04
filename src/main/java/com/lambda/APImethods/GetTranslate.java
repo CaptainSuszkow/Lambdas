@@ -1,6 +1,10 @@
 package com.lambda.APImethods;
 
 import com.amazonaws.services.lambda.runtime.Context;
+import com.github.vbauer.yta.model.Direction;
+import com.github.vbauer.yta.model.Language;
+import com.github.vbauer.yta.model.Translation;
+import com.github.vbauer.yta.service.YTranslateApiImpl;
 import com.lambda.Model.APIRequest;
 
 import javax.ws.rs.core.Response;
@@ -16,21 +20,13 @@ public class GetTranslate {
     public static Object handleRequest(APIRequest request, Context context) {
 
         try {
-            URL url = new URL("https://translate.yandex.net/api/v1.5/tr.json/translate" +
-                    "?key=" + key +
-                    "&text=" + request.getText() +
-                    "&lang=" + request.getLang());
-            HttpURLConnection con = (HttpURLConnection) url.openConnection();
-            con.setRequestMethod("GET");
-            BufferedReader in = new BufferedReader(
-                    new InputStreamReader(con.getInputStream()));
-            String inputLine;
-            StringBuffer content = new StringBuffer();
-            while ((inputLine = in.readLine()) != null) {
-                content.append(inputLine);
+            YTranslateApiImpl api = new YTranslateApiImpl(key);
+            Direction dir = Direction.of(Language.PL, Language.EN);
+            if (request.getLang().equals("en-pl")) {
+                dir = Direction.of(Language.EN, Language.PL);
             }
-            in.close();
-            return content.toString();
+            Translation translation = api.translationApi().translate(request.getText(), dir);
+            return translation.text();
         } catch (Exception ex) {
             return Response.Status.INTERNAL_SERVER_ERROR;
         }
