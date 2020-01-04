@@ -8,10 +8,6 @@ import com.github.vbauer.yta.service.YTranslateApiImpl;
 import com.lambda.Model.APIRequest;
 
 import javax.ws.rs.core.Response;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 
 public class GetTranslate {
 
