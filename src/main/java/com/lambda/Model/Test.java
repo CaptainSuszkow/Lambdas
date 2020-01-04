@@ -5,6 +5,7 @@ import com.amazonaws.services.dynamodbv2.datamodeling.*;
 import java.util.List;
 
 @DynamoDBTable(tableName = "cc_tests")
+@DynamoDBDocument
 public class Test {
 
     private String testUUID;
