@@ -9,6 +9,8 @@ import com.lambda.Cognito.Authorizer;
 import com.lambda.Model.Test;
 
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
+import java.util.List;
 
 public class GetList {
     private static AmazonDynamoDB client = AmazonDynamoDBAsyncClientBuilder.defaultClient();
@@ -24,7 +26,20 @@ public class GetList {
         }
 
 
-        return mapper.scan(Test.class, new DynamoDBScanExpression());
+        List<Test> output = new ArrayList<>();
+        List<Test> input = mapper.scan(Test.class, new DynamoDBScanExpression());
+
+        String userName = Authorizer.getUserName(request.getUser().getUserToken());
+
+        for(int  i = 0; i < input.size(); i++){
+            if( input.get(i).getQuestions() != null &&
+                input.get(i).getUser() != null){
+
+                if(input.get(i).getUser().getUserName().equals(userName))
+                    output.add(input.get(i));
+            }
+        }
+        return  output;
     }
 
 }
