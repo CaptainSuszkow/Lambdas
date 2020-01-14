@@ -11,10 +11,8 @@ public class Candidate {
     private String testUUID;
     private String candidateName;
     private String recruiterName;
-    private Test test;
-    private List<String> answers;
-    private Double score;
     private String requestToken;
+    private List<Test> doneTests;
 
 
 
@@ -50,30 +48,13 @@ public class Candidate {
         this.recruiterName = recruiterName;
     }
 
-    @DynamoDBAttribute(attributeName = "Test")
-    public Test getTest() {
-        return test;
+    @DynamoDBAttribute(attributeName = "doneTests")
+    public List<Test> getDoneTests() {
+        return doneTests;
     }
 
-    public void setTest(Test test) {
-        this.test = test;
-    }
-    @DynamoDBAttribute(attributeName = "answers")
-    public List<String> getAnswers() {
-        return answers;
-    }
-
-    public void setAnswers(List<String> answers) {
-        this.answers = answers;
-    }
-
-    @DynamoDBAttribute(attributeName = "score")
-    public Double getScore() {
-        return score;
-    }
-
-    public void setScore(Double score) {
-        this.score = score;
+    public void setDoneTests(List<Test> doneTests) {
+        this.doneTests = doneTests;
     }
 
     @DynamoDBIgnore
