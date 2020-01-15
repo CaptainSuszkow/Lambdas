@@ -65,8 +65,8 @@ public class GetSynonym {
 
             return response;
         } catch (Exception ex) {
-            //return ex.getMessage();
-            return Response.Status.INTERNAL_SERVER_ERROR;
+            return ex.getMessage();
+            //return Response.Status.INTERNAL_SERVER_ERROR;
         }
     }
 }
