@@ -38,34 +38,45 @@ public class GetMyself {
 
         DynamoDBScanExpression scanExpression = new DynamoDBScanExpression()
                 .withFilterExpression("candidateName =  :val").withExpressionAttributeValues(eav);
-        String recruiterName;
+        Candidate temp;
         try {
-             recruiterName = mapper.scan(Candidate.class, scanExpression).get(0).getRecruiterName();
+             temp = mapper.scan(Candidate.class, scanExpression).get(0);
         }
         catch (Exception ex){
             return Response.Status.NOT_FOUND;
         }
 
 
-        eav.clear();
-        eav.put(":val", new AttributeValue().withS(recruiterName));
-
-        scanExpression = new DynamoDBScanExpression()
-                .withFilterExpression("#key = :val").withExpressionAttributeValues(eav);
-        scanExpression.addExpressionAttributeNamesEntry("#key","user.userName");
-        scanExpression.setFilterExpression("#key = :val");
-        scanExpression.setExpressionAttributeValues(eav);
+//        eav.clear();
+//        eav.put(":val", new AttributeValue().withS(recruiterName));
+//
+//        scanExpression = new DynamoDBScanExpression()
+//                .withFilterExpression("#key = :val").withExpressionAttributeValues(eav);
+//        scanExpression.addExpressionAttributeNamesEntry("#key","user.userName");
+//        scanExpression.setFilterExpression("#key = :val");
+//        scanExpression.setExpressionAttributeValues(eav);
 
         List<Test> output = new ArrayList<>();
         List<Test> input = mapper.scan(Test.class, new DynamoDBScanExpression());
 
 
-        for(int  i = 0; i < input.size(); i++){
+        for(int  i = 0; i < input.size(); i++) {
+            boolean answered = false;
             if( input.get(i).getQuestions() != null &&
-                    input.get(i).getUser() != null){
+                    input.get(i).getUser() != null) {
 
-                if(input.get(i).getUser().getUserName().equals(recruiterName))
-                    output.add(input.get(i));
+                if(input.get(i).getUser().getUserName().equals(temp.getRecruiterName())) {
+                    for (int j = 0; j < temp.getDoneTests().size(); j++) {
+                        if (input.get(i).getTestUUID().equals(temp.getDoneTests().get(j).getTestUUID())) {
+                            answered = true;
+                        }
+
+                    }
+                    if(!answered){
+                        output.add(input.get(i));
+                    }
+                }
+
             }
         }
         return output;
