@@ -21,7 +21,7 @@ public class Question {
 
     public Question() {
     }
-
+/*
     public Question(String answerA, String answerB, String answerC,
                     String answerD, String correct, String id,
                     boolean isClosed, boolean isNumerical, boolean isOpen,
@@ -49,7 +49,7 @@ public class Question {
         this.questionContent = questionContent;
         this.questionAnswer = questionAnswer;
     }
-
+*/
 
     @DynamoDBAttribute(attributeName = "AnswerA")
     public String getAnswerA() {

@@ -49,21 +49,24 @@ public class GetSynonym {
             in.close();
             JSONObject obj = new JSONObject(content.toString());
             JSONArray arr1 = obj.getJSONArray("def");
-            JSONArray arr2 = arr1.getJSONObject(0).getJSONArray("tr");
-            for (Object item : arr2) {
-                JSONObject temp = (JSONObject) item;
-                if (((JSONObject) item).has("mean")) {
-                    for (Object syn : temp.getJSONArray("mean")) {
-                        response.synonyms.add(((JSONObject) syn).getString("text"));
+            if (arr1.length() > 0) {
+                JSONArray arr2 = arr1.getJSONObject(0).getJSONArray("tr");
+                for (Object item : arr2) {
+                    JSONObject temp = (JSONObject) item;
+                    if (((JSONObject) item).has("mean")) {
+                        for (Object syn : temp.getJSONArray("mean")) {
+                            response.synonyms.add(((JSONObject) syn).getString("text"));
 
+                        }
                     }
                 }
             }
 
+
             return response;
         } catch (Exception ex) {
-            //return ex.getMessage();
-            return Response.Status.INTERNAL_SERVER_ERROR;
+            return ex.getMessage();
+            //return Response.Status.INTERNAL_SERVER_ERROR;
         }
     }
 }
