@@ -1,4 +1,4 @@
-package com.lambda.APImethods;
+package com.lambda.APImethods.OutsideAPIs;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.github.vbauer.yta.model.Direction;

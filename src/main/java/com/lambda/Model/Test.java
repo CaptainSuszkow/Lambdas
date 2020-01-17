@@ -31,7 +31,8 @@ public class Test {
     public List<Question> getQuestions() {
         return questions;
     }
-    
+
+    @DynamoDBAttribute(attributeName = "testOwner")
     public User getUser() {
         return user;
     }

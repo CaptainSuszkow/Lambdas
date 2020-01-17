@@ -6,7 +6,7 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBScanExpression;
 import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 import com.amazonaws.services.lambda.runtime.Context;
-import com.lambda.APImethods.GetList;
+import com.lambda.APImethods.Tests.GetList;
 import com.lambda.Cognito.Authorizer;
 import com.lambda.Model.Candidate;
 import com.lambda.Model.Test;
@@ -91,11 +91,9 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBScanExpression;
 import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 import com.amazonaws.services.lambda.runtime.Context;
-import com.lambda.APImethods.GetList;
 import com.lambda.Cognito.Authorizer;
 import com.lambda.Model.Candidate;
 import com.lambda.Model.Test;
-import com.lambda.Model.User;
 
 import javax.ws.rs.core.Response;
 import java.util.ArrayList;
@@ -132,15 +130,11 @@ public class GetMyself {
 
         eav.clear();
         eav.put(":val", new AttributeValue().withS(recruiterName));
-
         scanExpression = new DynamoDBScanExpression()
-                .withFilterExpression("#key = :val").withExpressionAttributeValues(eav);
-        scanExpression.addExpressionAttributeNamesEntry("#key", "user.userName");
-        scanExpression.setFilterExpression("#key = :val");
-        scanExpression.setExpressionAttributeValues(eav);
+                .withFilterExpression("testOwner.userName = :val").withExpressionAttributeValues(eav);
 
         List<Test> output = new ArrayList<>();
-        List<Test> input = mapper.scan(Test.class, new DynamoDBScanExpression());
+        List<Test> input = mapper.scan(Test.class, scanExpression);
 
 
         Test[] tests = (Test[]) input.stream().filter(test -> test.getQuestions() != null && test.getUser() != null).toArray();
